@@ -1,0 +1,20 @@
+/* CSS declarations go here */
+
+.centerPane{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.cover{
+    width: 400px;
+}
+
+.spinner svg {
+  width: 28px;
+  height: 28px;
+  stroke: #444;
+  fill: #444;
+}

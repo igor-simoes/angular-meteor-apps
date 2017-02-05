@@ -1,0 +1,25 @@
+<ion-nav-bar ng-include="'header.ng.html'" class="bar-balanced" text-align="center"> </ion-nav-bar>
+<ion-nav-view>
+  <ion-view>
+    <ion-content>
+        <div class="centerPane">
+            <h3>Welcome {{user}}</h3>
+            <h3>Search for albums or singers</h3>
+            <label class="item item-input">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="search" placeholder="Search" ng-model="param">
+              <select ng-model="type" ng-options="search.name for search in searches">
+                  <options value="">Choose type</options>
+              </select>
+            </label>
+            <button class="button button-full button-balanced" ng-click="onSearch(type.name, param)">Search</button>
+            <p ng-repeat="obj in search">
+                <img ng-src="{{obj.images[1].url}}" class="cover"/>
+                Nome: {{obj.name}}
+            </p>
+        </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>
+<ion-footer-bar ng-include="'footer.ng.html'" align-title="center" class="bar-assertive">
+</ion-footer-bar>

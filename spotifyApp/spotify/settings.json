@@ -1,0 +1,11 @@
+/*
+Add Spotify API secret
+*/
+
+{
+    "public": {},
+    "private": {
+        "clientId": "AddYourSpotifyClientIdHere",
+        "secret": "AddYourSpotifySecretHere"
+    }
+}

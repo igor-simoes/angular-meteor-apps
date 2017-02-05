@@ -1,0 +1,17 @@
+<ion-nav-bar ng-include="'header.ng.html'" class="bar-balanced" text-align="center"> </ion-nav-bar>
+<ion-nav-view>
+  <ion-view>
+    <ion-content>
+        <div class="centerPane" ng-controller="playlistsController">
+            <h3>Playlists de {{$root.currentUser.profile.display_name}}</h3>
+            <ion-list>
+              <ion-item ng-repeat="item in playlists">
+                  {{item.name}}
+              </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>
+<ion-footer-bar ng-include="'footer.ng.html'" align-title="center" class="bar-assertive" ng-controller="homeController">
+</ion-footer-bar>
